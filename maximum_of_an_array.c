@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],max,size,i,l=1;
+    int a[100],max,i,l=1,size;
     scanf("%d",&size);
     for(i=0;i<size;i++)
     scanf("%d",&a[i]);
@@ -11,7 +11,7 @@ int main()
         if(a[i]>max)
         {
             max=a[i];
-            l=i=1;
+            l=i+1;
         }
     }
     printf("%d
