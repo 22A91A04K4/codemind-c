@@ -10,8 +10,9 @@ int main()
     }
     for(i=0;i<N;i++)
     {
-        if(i%2==0)
+        if(i%2==0)  
         sum=sum+a[i];
     }
     printf("%d",sum);
 }
+   
