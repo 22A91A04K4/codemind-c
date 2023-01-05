@@ -1,13 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    int n,r;
+    int n,temp,m,sum=0;
     scanf("%d",&n);
-    r=0;
-    while(n>0 || n<0)
+    temp=n;
+    if(n<0)
     {
-        r=r*10+n%10;
+        n=n*(-1);
+    }
+    while(n>0)
+    {
+        m=n%10;
+        sum=(sum*10)+m;
         n/=10;
     }
-    printf("%d",r);
+    if(temp<0)
+    {
+        sum=sum*(-1);
+    }
+    printf("%d",sum);
+    return 0;
 }
